@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap');
+.gallery {
+  border: 1px solid #fff;
+  background-color: rgba(0,0,0,0);
+  margin: 20px;
+  margin-left: 0px;
+  width: 100%;
+  border-radius: 10px;
+}
+#more1,#more2,#more3,#more4,#more5,#more6,#more7,#more8,#more9{
+  display: none;
+}
+
+#myBtn1,#myBtn2,#myBtn3,#myBtn4,#myBtn5,#myBtn6,#myBtn7,#myBtn8,#myBtn9{
+  margin-left: 110px;
+  background-color: #ff80b3;
+  border-radius: 10px;
+}
+
+#myBtn1:hover {
+    background-color: #ff1a75;
+  }
+
+#myBtn2:hover {
+    background-color: #ff1a75;
+    }
+
+#myBtn3:hover {
+    background-color: #ff1a75;
+      }
+
+#myBtn4:hover {
+    background-color: #ff1a75;
+      }
+
+#myBtn5:hover {
+    background-color: #ff1a75;
+      }
+
+#myBtn6:hover {
+    background-color: #ff1a75;
+      }
+
+#myBtn7:hover {
+    background-color: #ff1a75;
+      }
+
+#myBtn8:hover {
+    background-color: #ff1a75;
+      }
+
+#myBtn9:hover {
+    background-color: #ff1a75;
+      }
+.news{
+  text-align: center;
+}
+
+      .name textarea[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid #000000;
+        border-radius: 10px;
+        box-sizing: border-box;
+      }
+
+      .message textarea[type=text], select {
+        width: 100%;
+        height: 200px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid #000000;
+        border-radius: 10px;
+        box-sizing: border-box;
+      }
+
+
+.gallery img {
+  width: 100%;
+  height: 300px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family: 'Sansita Swashed', cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+.header {
+  background-color: #9999ff;
+  padding: 5px;
+  text-align: center;
+  font-family: courier;
+}
+.footer{
+  background-color: #9999ff;
+  padding: 40px;
+  text-align: center;
+}
+table, th, td{
+  border: 2px solid black;
+  border-collapse: collapse;
+  text-align:center;
+  width: 100%;
+  font-family: 'Sansita Swashed', cursive;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+h3{
+  margin:0px;
+  text-align:center;
+  font-family: 'Sansita Swashed', cursive;
+}
+h1{
+  margin:0px;
+  text-align:center;
+  font-family: 'Sansita Swashed', cursive;
+}
+p{
+  margin:0px;
+  text-align:center;
+  font-family: courier;
+}
+body{
+  padding:0px;
+  margin:0px;
+  background-color:#b3e0ff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+    overflow:hidden;
+    background-color: #df80ff;
+    position: sticky;
+    font-size: 15px;
+    top:0;
+    font-family: courier;
+  }
+li {
+    float: left;
+  }
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 18px;
+    text-decoration: none;
+  }
+li a:hover {
+    background-color: #cc33ff;
+  }
+
+  .card1{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    max-width: 300px;
+    margin-left: 610px;
+    margin-top: -1px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    text-align: left;
+    border-radius: 10px;
+
+
+  }
+  .card2{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    max-width: 300px;
+    margin-left: 310px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    text-align: left;
+    display: inline-block;
+    border-radius: 10px;
+  }
+  .card3{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    max-width: 300px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    text-align: left;
+    display: inline-block;
+    border-radius: 10px;
+  }
+  .card4{
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    max-width: 300px;
+    margin-left: 150px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    text-align: left;
+    display: inline-block;
+    background-color: white;
+  }
+  .title {
+    color:black;
+    font-size:18px;
+    text-align:center;
+    padding-left:10px;
+  }
+  .content {
+    padding-left: 15px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  button{
+    color: white;
+  }
+
+  .Registration{
+    width: 50%;
+    margin-left: 370px;
+  }

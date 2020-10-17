@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>UKM Futsal#Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      input[type=text], select {
+        width: 100%;
+        padding: 12px 10px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #000000;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      button{
+        width: 150px;
+        height: 50px;
+        font-size: 25px;
+        background-color: #ff66a3;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px;
+        margin-left: 40%;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      .form{
+        margin-left: 15px;
+        margin-top: 15px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="logo.png" alt="logo" style="width:10%;">
+      <p>Welcome To UKM Futsal</p>
+      <p>universitas Ma Chung</p>
+      <p>Malang</p>
+    </div>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html"> About Us</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contactus.html"> Contact Us</a></li>
+      <li><a href="registration.html"> Registration</a></li>
+    </ul>
+
+    <div class="Registration">
+      <form class="form">
+        <input type="text" id="fname"  placeholder="Full Name">
+        <input type="text" id="Nickname"  placeholder="Nick Name">
+        <input type="text" id="nim"  placeholder="NIM">
+        <input type="text" id="prodi"  placeholder="Study Program">
+        <input type="text" id="line"  placeholder="ID Line">
+        <input type="text" id="email"  placeholder="E-Mail">
+        <input type="text" id="Nohp" placeholder="Phone Number">
+        <button type="button" onclick="send2()">Submit</button>
+      </form>
+    </div>
+
+    <script>
+    function send2(){
+      var FullName = document.getElementById('fname').value;
+      var Nname = document.getElementById('Nickname').value;
+      var Nim = document.getElementById('nim').value;
+      var Prodi = document.getElementById('prodi').value;
+      var Lineid = document.getElementById('line').value;
+      var Email = document.getElementById('email').value;
+      var Phone = document.getElementById('Nohp').value;
+      var Verify = document.getElementsByName('centang').checked;
+      var a;
+
+      if (FullName == "") {
+        alert("Type Your Full Name");
+      }
+      else if (Nname == "") {
+        alert("Type Your Nick Name");
+      }
+      else if (Nim == "") {
+        alert("Type Your NIM");
+      }
+      else if (Prodi == "") {
+        alert("Type Your Study Program");
+      }
+      else if (Lineid == "") {
+        alert("Type Your Line ID");
+      }
+      else if (Email == "") {
+        alert("Type Your E-mail");
+      }
+      else if (Phone == "") {
+        alert("Type Your Phone Number");
+      }
+
+      else{
+        a=confirm("Apakah Data dibawah ini sudah benar: "+
+        "\n Fullname         : " + FullName +
+        "\n Nickname        : " + Nname +
+        " \n NIM                 : " + Nim +
+        "\n Study Program: " + Prodi +
+        "\n Line ID             : " + Lineid +
+        "\n  E-mail             : " + Email +
+        "\n Phone              : " + Phone);
+        if (a==true) {
+          alert("Terima Kasih, Data anda sudah kami terima. Silahkan menunggu untuk dihubungi.")
+        }
+      }
+    }
+    </script>
+
+    <div class="footer">
+      <h3>&copy Copyright 2020 by William Wicaksono</h3>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>UKM Futsal#ContactUs</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+    button{
+      width: 150px;
+      height: 50px;
+      font-size: 25px;
+      background-color: #ff66a3;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="logo.png" alt="logo" style="width:10%;">
+      <p>Welcome To UKM Futsal</p>
+      <p>universitas Ma Chung</p>
+      <p>Malang</p>
+    </div>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html"> About Us</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contactus.html"> Contact Us</a></li>
+      <li><a href="registration.html"> Registration</a></li>
+    </ul>
+
+    <table>
+      <td style="width:50%" text-align:left;>Contact: <br>Email:<a href="mailto:UKM.Futsal@Machung.ac.id">UKM.Futsal@Machung.ac.id</a><br>Phone: 082238765261(Tzuyu) </td>
+      <th valign=left style="width:50%; border-right: 0px;">
+          <div>
+            <form>
+              <div class="name" style="text-align: left; font-size: 25px;">
+                <label for="name">Name</label>
+                <textarea type="text" id="name" placeholder="Type Your Name"></textarea>
+              </div>
+
+              <div class="message" style="text-align: left; font-size: 25px; margin-top: 10px;">
+                <label for="message">Message</label>
+                <textarea type="text" id="message" placeholder="Write Your Message"></textarea>
+              </div>
+              <button class="button" onclick="send()" >Submit</button>
+            </form>
+          </div>
+        </th>
+    </table>
+
+    <script>
+    function send(){
+      var Name = document.getElementById("name").value;
+      var pesan = document.getElementById("message").value;
+
+      if (Name=="") {
+        alert("Type Your Name");
+      }
+      else if (pesan == "") {
+        alert("Type Your Mail");
+      } else {
+        confirm("Hi, " + Name + " apakah anda sudah yakin ingin mengirim pesan: " + pesan + "?");
+      }
+    }
+
+    </script>
+
+    <table>
+      <tr>
+        <th><h1>Location</h1></th>
+      </tr>
+    </table>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.402443286848!2d112.58683485031925!3d-7.957296294240482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78825bc65e176b%3A0x954b33ee83283be2!2sUniversitas%20Ma%20Chung!5e0!3m2!1sid!2sid!4v1602859552526!5m2!1sid!2sid" width="1517" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <div class="footer">
+      <h3>&copy Copyright 2020 by William Wicaksono</h3>
+    </div>
+  </body>
+</html>
